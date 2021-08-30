@@ -1,0 +1,115 @@
+@import "mixin";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1efef;
+  color: $font-default-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 14px/1.33 "RobotoRegular", sans-serif;
+  overflow-x: hidden;
+  @include customScroll;
+}
+
+a,
+i,
+span,
+label,
+strong {
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a,
+input,
+button,
+textarea {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-family: RobotoBold, sans-serif;
+}
+
+hr {
+  background: none;
+  border: 0 none;
+  border-top: 1.3px dashed #b7b7b7;
+  height: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: .66;
+
+  &.no-top {
+    margin-top: 0;
+  }
+
+  &.no-bottom {
+    margin-bottom: 0;
+  }
+
+  &.no-space {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &.extra-space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.content-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-camel {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+

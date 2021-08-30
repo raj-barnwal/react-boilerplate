@@ -1,0 +1,194 @@
+@import "./../global/variable";
+@import "./../global/mixin";
+
+.custom-modal-container {
+  @include customScroll;
+
+  .ant-modal-header {
+    border-bottom-color: transparent;
+  }
+
+  .ant-modal-content {
+    border: solid 1px $themeColor;
+    border-radius: 6px;
+  }
+
+  .ant-modal-body {
+    padding: 50px;
+
+    .description-message {
+      color: $themeColor;
+      font-size: 26px;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+      text-align: center;
+
+      @include break-point(mobile-view) {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    @include break-point(mobile-view) {
+      padding: 40px 20px 20px 20px;
+    }
+  }
+
+  &.copy-modal {
+    .ant-modal-body {
+      padding: 10px 30px;
+
+    }
+    .license-configuration-container {
+      margin-top: 20px;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top-color: transparent;
+    padding-top: 0;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  &.full-width-modal {
+    overflow-x: hidden;
+    z-index: 999999!important;
+
+    .ant-modal {
+      top: 0;
+      width: 100% !important;
+
+      .ant-modal-content {
+        .ant-modal-close {
+          svg {
+            height: 24px;
+            width: 24px;
+          }
+
+          &:hover {
+            svg {
+              fill: $black;
+            }
+          }
+        }
+
+        .ant-modal-body {
+          padding: 30px;
+        }
+      }
+    }
+
+    &.admin-kya-preview {
+      .investor-portal {
+        .investor-portal-header {
+          background-color: $white;
+          position: fixed;
+          top: 0;
+          width: calc(100% - 112px);
+          z-index: 145;
+
+          .investor-kya-select {
+            position: unset;
+          }
+
+          .custom-steps-bar {
+            margin-top: 0;
+          }
+        }
+
+        .section-stepbar-container {
+          margin-bottom: 0;
+          z-index: 100;
+        }
+
+        .investor-kya-select {
+          &:after {
+            z-index: 0;
+          }
+        }
+
+        .approvals-required {
+          &.open {
+            top: 118px;
+            right: 20px;
+          }
+        }
+      }
+
+      .investor-accordion-container {
+        margin-top: 100px!important;
+
+        .ant-collapse-item {
+          &.ant-collapse-item-active {
+            &:after {
+              content: none!important;
+            }
+          }
+
+          .question-container {
+            position: unset;
+            z-index: unset;
+          }
+        }
+      }
+
+      .ant-modal-content {
+        border-color: transparent;
+        border-radius: 0;
+
+        .question-radio-container {
+          .ant-radio-button-wrapper {
+            .ant-radio-button {
+              z-index: 9;
+            }
+          }
+        }
+      }
+
+      .ant-modal-close {
+        position: fixed;
+        top: 0;
+        right: 15px;
+      }
+    }
+  }
+
+  &.secondary-modal {
+    z-index: 99999;
+  }
+
+  &.delete-approval-modal {
+    .ant-modal-footer {
+      @include break-point(mobile-view) {
+        .button {
+          min-width: 125px;
+
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.form-copy-modal {
+    .ant-modal-content {
+      min-height: 200px;
+
+      .ant-modal-body {
+        padding: 30px;
+
+        .license-configuration-container {
+          margin-top: 10px;
+          margin-bottom: -25px;
+          min-height: auto;
+
+          .primary-btn {
+            border-radius: 2.5px;
+          }
+        }
+      }
+    }
+  }
+}

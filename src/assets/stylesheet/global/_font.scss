@@ -1,0 +1,6 @@
+@import "mixin";
+$robotoFixed: "./../../fonts/Roboto/";
+
+@include font-type(RobotoLight, '#{$robotoFixed}RobotoCondensed-Light.ttf');
+@include font-type(RobotoRegular, '#{$robotoFixed}RobotoCondensed-Regular.ttf');
+@include font-type(RobotoBold, '#{$robotoFixed}RobotoCondensed-Bold.ttf');
