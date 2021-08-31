@@ -3,9 +3,9 @@ import './assets/stylesheet/style.scss';
 
 const App = () => {
   return (
-    <div>
-      React BoilerPlate
-    </div>
+    <h1 className="text-center ptb30">
+      Welcome to React BoilerPlate
+    </h1>
   );
 };
 

@@ -46,54 +46,8 @@
     pointer-events: none;
   }
 
-  &.radius {
-    border-radius: 50px;
-  }
-
-  &.small-height {
-    font-size: 15px;
-    height: 38px;
-  }
-
   svg {
     vertical-align: middle;
-  }
-
-  &.mr0 {
-    margin-right: 0;
-  }
-
-  &.mr10 {
-    margin-right: 10px;
-  }
-
-  &.group-buttons {
-    cursor: default;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    span {
-      cursor: pointer;
-      margin-right: 15px;
-      padding: 2px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &.question-btn{
-    display: flex;
-    align-items: center;
-    min-width: 53px;
-    padding: 0 18px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-
-    &:hover{
-      width: auto;
-    }
   }
 
   &:hover {
@@ -171,22 +125,6 @@
 
   &:focus {
     outline: none;
-  }
-
-  &.next-prev {
-    align-items: center;
-    display: inline-flex;
-    height: 30px;
-    margin-left: -10px;
-    padding: 10px;
-
-    &.ml10 {
-      margin-left: 10px;
-    }
-
-    @include break-point(mobile-view) {
-      margin-left: 0;
-    }
   }
 
   &.theme-btn {

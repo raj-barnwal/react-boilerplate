@@ -6,8 +6,8 @@ $b: "bottom";
 $l: "left";
 $step: 5;  // it provides interval gap
 
-// Global margin adjustment classes for 0-60. interval of 5px
-@for $i from 0 through 60 / $step {
+// Global margin adjustment classes for 0-40. interval of 5px
+@for $i from 0 through 40 / $step {
   .m#{$i*$step} {
     #{$m}: #{$i*$step}px;
   }
@@ -38,10 +38,10 @@ $step: 5;  // it provides interval gap
     #{$m}-#{$l}: #{$i*$step}px;
   }
 }
-// END Global margin adjustment classes for 0-60.
+// END Global margin adjustment classes for 0-40.
 
-// Global padding adjustment classes for 0-60.
-@for $i from 0 through 60 / $step {
+// Global padding adjustment classes for 0-40.
+@for $i from 0 through 40 / $step {
   .p#{$i*$step} {
     #{$p}: #{$i*$step}px;
   }
@@ -72,4 +72,4 @@ $step: 5;  // it provides interval gap
   }
 }
 
-// END Global padding adjustment classes for 0-60.
+// END Global padding adjustment classes for 0-40.
