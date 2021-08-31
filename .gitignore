@@ -33,6 +33,5 @@ yarn-error.log*
 yarn.lock
 
 # IDE files
-/.idea
-.idea/*
-.idea/
+.DS_Store
+.idea
